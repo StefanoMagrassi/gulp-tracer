@@ -1,0 +1,33 @@
+{
+  "name": "gulp-tracer",
+  "version": "0.1.0",
+  "description": "Gulp module to log messages - based on default gulp-util log",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Simple test...\" && nodejs ./tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanoMagrassi/gulp-tracer.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/StefanoMagrassi/gulp-tracer/issues"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "keywords": [
+    "gulp",
+    "util",
+    "module",
+    "plugin",
+    "trace",
+    "log"
+  ],
+  "author": "StefanoMagrassi <stefano.magrassi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "gulp-util": "^3.0.6"
+  }
+}
