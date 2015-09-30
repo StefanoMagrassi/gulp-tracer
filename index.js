@@ -7,7 +7,8 @@
 /*jshint strict:false*/
 
 // Modules
-var renderer = require('./lib/renderer.js').renderer;
+var utils    = require('./lib/utils.js'),
+    renderer = require('./lib/renderer.js').renderer;
     
 /**
  * Collects the methods exported.
@@ -72,12 +73,16 @@ var tracer = {
   log: function() {
     var self = this,
         type = arguments[0];
+        
+    console.log(type);
     
     // Call specific method
     if (typeof type === 'string' && self.contains(type)) {
-      self[type].apply(self, arguments);
+      var messages = utils.convert(arguments);
       
-      return;
+      messages.shift();
+      
+      return self[type].apply(self, messages);
     }
     
     // Simple log
