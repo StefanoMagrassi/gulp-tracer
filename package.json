@@ -1,6 +1,6 @@
 {
   "name": "gulp-tracer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gulp module to log messages - based on default gulp-util log",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "lib": "./lib"
   },
   "keywords": [
+    "gulpplugin",
     "gulp",
     "util",
     "module",
