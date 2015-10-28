@@ -68,14 +68,12 @@ var tracer = {
   
   /**
    * Logs simple message or a specific type, if it is passed as first parameter.
-   * @return {[type]} [description]
+   * @return {object}
    */
   log: function() {
     var self = this,
         type = arguments[0];
         
-    console.log(type);
-    
     // Call specific method
     if (typeof type === 'string' && self.contains(type)) {
       var messages = utils.convert(arguments);
